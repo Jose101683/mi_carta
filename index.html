@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi carta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+
+        <div class="otp-icon">&hearts;</div>
+        
+        <h2>¡Hola amor!</h2>
+        <p>Introduce la contraseña, hice algo para ti.</p>
+
+        <div class="otp-container">
+            <!-- inputmode="numeric" y pattern="[0-9]" fuerzan que aparezca el teclado numérico en celulares y tablets -->
+            <input type="text" class="otp-input" maxlength="1" inputmode="numeric" pattern="[0-9]">
+            <input type="text" class="otp-input" maxlength="1" inputmode="numeric" pattern="[0-9]">
+            <input type="text" class="otp-input" maxlength="1" inputmode="numeric" pattern="[0-9]">
+            <input type="text" class="otp-input" maxlength="1" inputmode="numeric" pattern="[0-9]">
+            <input type="text" class="otp-input" maxlength="1" inputmode="numeric" pattern="[0-9]">
+            <input type="text" class="otp-input" maxlength="1" inputmode="numeric" pattern="[0-9]">
+        </div>
+
+        <div id="errorMsg" class="error-message">Contraseña incorrecta. Inténtalo de nuevo.</div>
+        <div id="successMsg" class="success-message">Contraseña correcta! Acceso concedido.</div>
+
+        <button type="button" class="btn-verify" id="verifyBtn">Verificar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
